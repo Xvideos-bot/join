@@ -136,62 +136,289 @@
            target="_blank" rel="noopener noreferrer" data-translate="cta-button">Unlock XVideos Content Now for Free</a>
     </div>
 
-    <script>
-        const translations = {
-            "en": {
-                "heading": "Get Instant Access to XVideos Content!",
-                "video-alt": "Your browser does not support the video tag.",
-                "image-heading": "NEW SOCIAL NETWORK 18+ With XVideos",
-                "info-text": "Unlock the XVideos section in 3 easy steps:",
-                "step-1": "Answer a brief survey to customize your experience.",
-                "step-2": "Register quickly with Google or without email confirmation.",
-                "step-3": "Enjoy unlimited access to exclusive adult content in the private section of XVideos!",
-                "cta-button": "Unlock XVideos Content Now for Free"
-            },
-            "bn": {
-                "heading": "XVideos কন্টেন্টে সেকেন্ডে অ্যাক্সেস পান!",
-                "video-alt": "আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।",
-                "image-heading": "XVideos সঙ্গে নতুন সোশ্যাল নেটওয়ার্ক ১৮+",
-                "info-text": "৩টি সহজ পদক্ষেপে XVideos সেকশন আনলক করুন:",
-                "step-1": "আপনার অভিজ্ঞতা কাস্টমাইজ করতে একটি সংক্ষিপ্ত সার্ভে উত্তর দিন।",
-                "step-2": "গুগলের মাধ্যমে দ্রুত নিবন্ধন করুন বা ইমেল যাচাইকরণ ছাড়াই।",
-                "step-3": "XVideos এর প্রাইভেট সেকশনে এক্সক্লুসিভ অ্যাডাল্ট কন্টেন্টে অবারিত অ্যাক্সেস উপভোগ করুন!",
-                "cta-button": "এখনই XVideos কন্টেন্ট আনলক করুন"
-            },
-            "bg": {
-                "heading": "Получете незабавен достъп до съдържание на XVideos!",
-                "video-alt": "Вашият браузър не поддържа видеото.",
-                "image-heading": "НОВА СОЦИАЛНА МРЕЖА 18+ с XVideos",
-                "info-text": "Отключете секцията на XVideos с 3 лесни стъпки:",
-                "step-1": "Отговорете на кратка анкета, за да персонализирате изживяването си.",
-                "step-2": "Регистрирайте се бързо с Google или без потвърждение на имейл.",
-                "step-3": "Наслаждавайте се на неограничен достъп до ексклузивно съдържание за възрастни в частната секция на XVideos!",
-                "cta-button": "Отключете съдържание на XVideos безплатно"
-            },
-            "zh": {
-                "heading": "立即访问 XVideos 内容！",
-                "video-alt": "您的浏览器不支持视频标签。",
-                "image-heading": "与 XVideos 的新社交网络 18+",
-                "info-text": "通过 3 个简单的步骤解锁 XVideos 部分：",
-                "step-1": "回答简短的调查以定制您的体验。",
-                "step-2": "快速通过 Google 注册或无需电子邮件确认。",
-                "step-3": "在 XVideos 的私人区域享受无限访问独家成人内容！",
-                "cta-button": "立即解锁 XVideos 内容"
-            },
-            // Continue adding translations for other languages...
-        };
-
-        const userLang = navigator.language.slice(0, 2);
-        const elements = document.querySelectorAll("[data-translate]");
-
-        if (translations[userLang]) {
-            elements.forEach(el => {
-                const key = el.getAttribute("data-translate");
-                if (translations[userLang][key]) {
-                    el.textContent = translations[userLang][key];
-                }
-            });
-        }
-    </script>
+<script>
+const translations = {
+    "en": {
+        "heading": "Instant Access to XVideos Content!",
+        "video-alt": "Your browser does not support the video tag.",
+        "image-heading": "NEW 18+ SOCIAL NETWORK with XVideos",
+        "info-text": "Unlock the XVideos section in 3 easy steps:",
+        "step-1": "Answer a short survey to customize your experience.",
+        "step-2": "Sign up quickly with Google or without email confirmation.",
+        "step-3": "Enjoy unlimited access to exclusive adult content in the XVideos private section!",
+        "cta-button": "Unlock XVideos Content Now for Free"
+	},
+    "ms": {
+        "heading": "Dapatkan Akses Segera ke Konten XVideos!",
+        "video-alt": "Pelayar anda tidak menyokong tag video.",
+        "image-heading": "JARINGAN SOSIAL 18+ BARU dengan XVideos",
+        "info-text": "Buka bahagian XVideos dalam 3 langkah mudah:",
+        "step-1": "Jawab tinjauan ringkas untuk menyesuaikan pengalaman anda.",
+        "step-2": "Daftar dengan cepat menggunakan Google atau tanpa pengesahan emel.",
+        "step-3": "Nikmati akses tanpa had ke kandungan dewasa eksklusif di bahagian peribadi XVideos!",
+        "cta-button": "Buka Kandungan XVideos Sekarang Secara Percuma"
+    },
+    "no": {
+        "heading": "Få umiddelbar tilgang til XVideos innhold!",
+        "video-alt": "Nettleseren din støtter ikke video-taggen.",
+        "image-heading": "NYTT SOSIALE NETTVERK 18+ med XVideos",
+        "info-text": "Lås opp XVideos-seksjonen i 3 enkle trinn:",
+        "step-1": "Svar på en kort undersøkelse for å tilpasse opplevelsen din.",
+        "step-2": "Registrer deg raskt med Google eller uten e-postbekreftelse.",
+        "step-3": "Nyt ubegrenset tilgang til eksklusivt vokseninnhold i den private delen av XVideos!",
+        "cta-button": "Lås opp XVideos innhold nå gratis"
+    },
+    "pl": {
+        "heading": "Uzyskaj natychmiastowy dostęp do treści XVideos!",
+        "video-alt": "Twoja przeglądarka nie obsługuje tagu wideo.",
+        "image-heading": "NOWA SIEĆ SPOŁECZNOŚCIOWA 18+ z XVideos",
+        "info-text": "Odblokuj sekcję XVideos w 3 łatwych krokach:",
+        "step-1": "Odpowiedz na krótką ankietę, aby dostosować swoje doświadczenie.",
+        "step-2": "Szybka rejestracja za pomocą Google lub bez potwierdzenia e-mail.",
+        "step-3": "Ciesz się nieograniczonym dostępem do ekskluzywnych treści dla dorosłych w prywatnej sekcji XVideos!",
+        "cta-button": "Odblokuj treści XVideos teraz za darmo"
+    },
+    "ro": {
+        "heading": "Acces instant la conținutul XVideos!",
+        "video-alt": "Browserul dumneavoastră nu acceptă eticheta video.",
+        "image-heading": "REȚEA SOCIALĂ 18+ NOUĂ cu XVideos",
+        "info-text": "Dezblocați secțiunea XVideos în 3 pași simpli:",
+        "step-1": "Răspundeți unui sondaj scurt pentru a personaliza experiența.",
+        "step-2": "Înregistrați-vă rapid cu Google sau fără confirmare prin e-mail.",
+        "step-3": "Bucurați-vă de acces nelimitat la conținut exclusiv pentru adulți în secțiunea privată XVideos!",
+        "cta-button": "Dezvăluie conținutul XVideos acum gratuit"
+    },
+    "ru": {
+        "heading": "Получите мгновенный доступ к контенту XVideos!",
+        "video-alt": "Ваш браузер не поддерживает видеотег.",
+        "image-heading": "НОВАЯ СОЦИАЛЬНАЯ СЕТЬ 18+ с XVideos",
+        "info-text": "Разблокируйте раздел XVideos за 3 простых шага:",
+        "step-1": "Ответьте на короткий опрос, чтобы настроить ваш опыт.",
+        "step-2": "Зарегистрируйтесь быстро с помощью Google или без подтверждения электронной почты.",
+        "step-3": "Получите неограниченный доступ к эксклюзивному контенту для взрослых в приватной части XVideos!",
+        "cta-button": "Разблокируйте контент XVideos бесплатно прямо сейчас"
+    },
+    "sv": {
+        "heading": "Få omedelbar åtkomst till XVideos-innehåll!",
+        "video-alt": "Din webbläsare stöder inte videomärket.",
+        "image-heading": "NYTT SOCIALT NÄTVERK 18+ med XVideos",
+        "info-text": "Lås upp XVideos-sektionen i 3 enkla steg:",
+        "step-1": "Svara på en kort enkät för att anpassa din upplevelse.",
+        "step-2": "Registrera dig snabbt med Google eller utan e-postbekräftelse.",
+        "step-3": "Njut av obegränsad tillgång till exklusivt vuxeninnehåll i den privata sektionen på XVideos!",
+        "cta-button": "Lås upp XVideos-innehåll nu gratis"
+    },
+    "tl": {
+        "heading": "Kumuha ng Agad na Akses sa XVideos Content!",
+        "video-alt": "Ang iyong browser ay hindi sumusuporta sa video tag.",
+        "image-heading": "BAGONG 18+ SOCIAL NETWORK kasama ang XVideos",
+        "info-text": "I-unlock ang XVideos section sa 3 madaling hakbang:",
+        "step-1": "Sagutin ang isang maikling survey upang i-customize ang iyong karanasan.",
+        "step-2": "Mag-sign up nang mabilis gamit ang Google o walang email confirmation.",
+        "step-3": "Mag-enjoy ng walang limitasyong access sa eksklusibong adult content sa pribadong seksyon ng XVideos!",
+        "cta-button": "I-unlock ang XVideos Content Ngayon ng Libre"
+    },
+    "th": {
+        "heading": "เข้าถึงเนื้อหาของ XVideos ทันที!",
+        "video-alt": "เบราว์เซอร์ของคุณไม่รองรับแท็กวิดีโอ.",
+        "image-heading": "เครือข่ายสังคมใหม่ 18+ กับ XVideos",
+        "info-text": "ปลดล็อกส่วนของ XVideos ใน 3 ขั้นตอนง่าย ๆ:",
+        "step-1": "ตอบแบบสอบถามสั้น ๆ เพื่อปรับแต่งประสบการณ์ของคุณ.",
+        "step-2": "ลงทะเบียนอย่างรวดเร็วผ่าน Google หรือไม่ต้องยืนยันอีเมล.",
+        "step-3": "เพลิดเพลินกับการเข้าถึงเนื้อหาสำหรับผู้ใหญ่ที่ไม่จำกัดในส่วนส่วนตัวของ XVideos!",
+        "cta-button": "ปลดล็อกเนื้อหาของ XVideos ตอนนี้ฟรี"
+    },
+    "tr": {
+        "heading": "XVideos İçeriğine Anında Erişin!",
+        "video-alt": "Tarayıcınız video etiketini desteklemiyor.",
+        "image-heading": "XVideos ile YENİ 18+ SOSYAL AĞ",
+        "info-text": "XVideos bölümünü 3 kolay adımda açın:",
+        "step-1": "Deneyiminizi kişiselleştirmek için kısa bir anketi yanıtlayın.",
+        "step-2": "Google ile hızlı bir şekilde kaydolun veya e-posta onayı olmadan kaydolun.",
+        "step-3": "XVideos'in özel bölümünde sınırsız erişimle özel yetişkin içeriği keyfini çıkarın!",
+        "cta-button": "XVideos İçeriğini Şimdi Ücretsiz Açın"
+    },
+    "uk": {
+        "heading": "Отримайте миттєвий доступ до контенту XVideos!",
+        "video-alt": "Ваш браузер не підтримує тег відео.",
+        "image-heading": "НОВА СОЦІАЛЬНА МЕРЕЖА 18+ з XVideos",
+        "info-text": "Розблокуйте розділ XVideos за 3 простими кроками:",
+        "step-1": "Відповідайте на коротке опитування для налаштування вашого досвіду.",
+        "step-2": "Швидка реєстрація через Google або без підтвердження електронної пошти.",
+        "step-3": "Отримайте необмежений доступ до ексклюзивного контенту для дорослих у приватному розділі XVideos!",
+        "cta-button": "Розблокуйте контент XVideos зараз безкоштовно"
+    },
+    "ur": {
+        "heading": "XVideos کے مواد تک فوری رسائی حاصل کریں!",
+        "video-alt": "آپ کا براؤزر ویڈیو ٹیگ کی حمایت نہیں کرتا ہے.",
+        "image-heading": "XVideos کے ساتھ نیا 18+ سوشل نیٹ ورک",
+        "info-text": "XVideos کے سیکشن کو 3 آسان مراحل میں ان لاک کریں:",
+        "step-1": "اپنے تجربے کو ذاتی بنانے کے لیے ایک مختصر سروے کا جواب دیں۔",
+        "step-2": "جلدی سے گوگل کے ذریعے سائن اپ کریں یا ای میل کی تصدیق کے بغیر سائن اپ کریں۔",
+        "step-3": "XVideos کے ذاتی حصے میں خصوصی بالغ مواد تک لامحدود رسائی سے لطف اندوز ہوں!",
+        "cta-button": "ابھی XVideos کا مواد مفت میں ان لاک کریں"
+    },
+    "uz": {
+        "heading": "XVideos tarkibiga darhol kirish oling!",
+        "video-alt": "Brauzeringiz video tegi bilan ishlamadi.",
+        "image-heading": "XVideos bilan YANGI 18+ ICHKI TARMOG'I",
+        "info-text": "XVideos bo'limini 3 oson qadamda oching:",
+        "step-1": "Tajribangizni sozlash uchun qisqa so'rovnomaga javob bering.",
+        "step-2": "Google yordamida tezda ro'yxatdan o'ting yoki elektron pochta tasdiqlashisiz ro'yxatdan o'ting.",
+        "step-3": "XVideos'ning shaxsiy bo'limida cheksiz kirish bilan maxsus kattalar tarkibidan bahramand bo'ling!",
+        "cta-button": "XVideos tarkibini hozir bepul oching"
+    },
+    "vi": {
+        "heading": "Truy cập ngay lập tức vào nội dung XVideos!",
+        "video-alt": "Trình duyệt của bạn không hỗ trợ thẻ video.",
+        "image-heading": "MẠNG XÃ HỘI 18+ MỚI với XVideos",
+        "info-text": "Mở khóa phần XVideos trong 3 bước đơn giản:",
+        "step-1": "Trả lời một cuộc khảo sát ngắn để tùy chỉnh trải nghiệm của bạn.",
+        "step-2": "Đăng ký nhanh chóng với Google hoặc không cần xác minh email.",
+        "step-3": "Tận hưởng quyền truy cập không giới hạn vào nội dung người lớn độc quyền trong phần riêng tư của XVideos!",
+        "cta-button": "Mở khóa nội dung XVideos ngay bây giờ miễn phí"
+    },
+    "bn": {
+        "heading": "XVideos কনটেন্টে তাত্ক্ষণিক অ্যাক্সেস পান!",
+        "video-alt": "আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।",
+        "image-heading": "XVideos এর সাথে নতুন 18+ সামাজিক নেটওয়ার্ক",
+        "info-text": "XVideos সেকশনটি 3টি সহজ পদক্ষেপে আনলক করুন:",
+        "step-1": "আপনার অভিজ্ঞতা কাস্টমাইজ করতে একটি সংক্ষিপ্ত জরিপের উত্তর দিন।",
+        "step-2": "Google দিয়ে দ্রুত সাইন আপ করুন অথবা ইমেইল কনফার্মেশন ছাড়াই সাইন আপ করুন।",
+        "step-3": "XVideos এর ব্যক্তিগত সেকশনে একচেটিয়া প্রাপ্তবয়স্ক কনটেন্টে অসীম অ্যাক্সেস উপভোগ করুন!",
+        "cta-button": "এখনই XVideos কনটেন্ট আনলক করুন ফ্রি"
+    },
+    "bg": {
+        "heading": "Незабавен достъп до съдържание на XVideos!",
+        "video-alt": "Вашият браузър не поддържа видео елемента.",
+        "image-heading": "НОВА 18+ СОЦИАЛНА МРЕЖА с XVideos",
+        "info-text": "Отключете XVideos секцията в 3 лесни стъпки:",
+        "step-1": "Отговорете на кратка анкета, за да персонализирате преживяването си.",
+        "step-2": "Регистрирайте се бързо с Google или без потвърждение по имейл.",
+        "step-3": "Насладете се на неограничен достъп до ексклузивно възрастно съдържание в личната секция на XVideos!",
+        "cta-button": "Отключете XVideos съдържанието сега безплатно"
+    },
+    "zh": {
+        "heading": "立即访问XVideos内容！",
+        "video-alt": "您的浏览器不支持视频标签。",
+        "image-heading": "与XVideos一起加入新的18+社交网络",
+        "info-text": "通过3个简单的步骤解锁XVideos部分：",
+        "step-1": "回答简短的调查，以定制您的体验。",
+        "step-2": "通过Google快速注册，或者无需电子邮件确认。",
+        "step-3": "享受无限制访问XVideos私人部分的独家成人内容！",
+        "cta-button": "立即免费解锁XVideos内容"
+    },
+    "nl": {
+        "heading": "Directe toegang tot XVideos-inhoud!",
+        "video-alt": "Je browser ondersteunt de video-tag niet.",
+        "image-heading": "NIEUW 18+ SOCIAAL NETWERK met XVideos",
+        "info-text": "Ontgrendel de XVideos-sectie in 3 eenvoudige stappen:",
+        "step-1": "Beantwoord een korte enquête om je ervaring te personaliseren.",
+        "step-2": "Meld je snel aan met Google of zonder e-mailbevestiging.",
+        "step-3": "Geniet van onbeperkte toegang tot exclusieve volwassen inhoud in de privésectie van XVideos!",
+        "cta-button": "Ontgrendel nu gratis XVideos-inhoud"
+    },
+    "fil": {
+        "heading": "Kumuha ng Agarang Pag-access sa XVideos Content!",
+        "video-alt": "Ang iyong browser ay hindi sumusuporta sa video tag.",
+        "image-heading": "BAGONG 18+ SOCIAL NETWORK kasama ang XVideos",
+        "info-text": "I-unlock ang seksyon ng XVideos sa 3 madaling hakbang:",
+        "step-1": "Sagutin ang isang maikling survey upang i-customize ang iyong karanasan.",
+        "step-2": "Mag-sign up nang mabilis gamit ang Google o nang walang kumpirmasyon ng email.",
+        "step-3": "Mag-enjoy ng walang limitasyong access sa eksklusibong adult content sa pribadong seksyon ng XVideos!",
+        "cta-button": "I-unlock ang XVideos Content Ngayon Libre"
+    },
+    "fi": {
+        "heading": "Hanki välitön pääsy XVideosin sisältöön!",
+        "video-alt": "Selain ei tue video-tagi.",
+        "image-heading": "UUSI 18+ SOSIAALINEN VERKOSTO XVideosin kanssa",
+        "info-text": "Avaa XVideos-osio 3 yksinkertaisessa vaiheessa:",
+        "step-1": "Vastaa lyhyeen kyselyyn räätälöidäksesi kokemuksesi.",
+        "step-2": "Rekisteröidy nopeasti Googlella tai ilman sähköpostivahvistusta.",
+        "step-3": "Nauti rajoittamattomasta pääsystä eksklusiiviseen aikuissisältöön XVideosin yksityisellä osiolla!",
+        "cta-button": "Avaa XVideosin sisältö nyt ilmaiseksi"
+    },
+    "de": {
+        "heading": "Sofortiger Zugriff auf XVideos-Inhalte!",
+        "video-alt": "Ihr Browser unterstützt das Video-Tag nicht.",
+        "image-heading": "NEUES 18+ SOZIALES NETZWERK mit XVideos",
+        "info-text": "Schalte die XVideos-Sektion in 3 einfachen Schritten frei:",
+        "step-1": "Beantworte eine kurze Umfrage, um deine Erfahrung anzupassen.",
+        "step-2": "Melde dich schnell mit Google an oder ohne E-Mail-Bestätigung.",
+        "step-3": "Genieße uneingeschränkten Zugriff auf exklusive Erwachsenen-Inhalte im privaten Bereich von XVideos!",
+        "cta-button": "Schalte jetzt kostenlos XVideos-Inhalte frei"
+    },
+    "he": {
+        "heading": "גישה מיידית לתוכן XVideos!",
+        "video-alt": "הדפדפן שלך לא תומך בתג וידאו.",
+        "image-heading": "רשת חברתית חדשה 18+ עם XVideos",
+        "info-text": "פתח את חלק XVideos ב-3 צעדים פשוטים:",
+        "step-1": "ענה על סקר קצר כדי להתאים אישית את החוויה שלך.",
+        "step-2": "הירשם במהירות עם Google או ללא אישור אימייל.",
+        "step-3": "הנ享י גישה ללא הגבלה לתוכן מבוגר בלעדי בחלק הפרטי של XVideos!",
+        "cta-button": "פתח את תוכן XVideos עכשיו בחינם"
+    },
+    "hi": {
+        "heading": "XVideos सामग्री तक तत्काल पहुंच प्राप्त करें!",
+        "video-alt": "आपका ब्राउज़र वीडियो टैग का समर्थन नहीं करता है।",
+        "image-heading": "XVideos के साथ नया 18+ सोशल नेटवर्क",
+        "info-text": "3 आसान चरणों में XVideos अनुभाग अनलॉक करें:",
+        "step-1": "अपने अनुभव को कस्टमाइज़ करने के लिए एक संक्षिप्त सर्वेक्षण का उत्तर दें।",
+        "step-2": "Google के साथ जल्दी से साइन अप करें या बिना ईमेल पुष्टि के साइन अप करें।",
+        "step-3": "XVideos के निजी सेक्शन में एक्सक्लूसिव वयस्क सामग्री तक असीमित पहुंच का आनंद लें!",
+        "cta-button": "अब XVideos सामग्री को मुफ्त में अनलॉक करें"
+    },
+    "hu": {
+        "heading": "Azonnali hozzáférés a XVideos tartalomhoz!",
+        "video-alt": "Böngészője nem támogatja a videó címkét.",
+        "image-heading": "ÚJ SZOCIÁLIS HÁLÓZAT 18+ a XVideos-szal",
+        "info-text": "Hozzáférés a XVideos szekcióhoz 3 egyszerű lépésben:",
+        "step-1": "Töltse ki a rövid kérdőívet az élmény személyre szabásához.",
+        "step-2": "Gyors regisztráció Google-val vagy email megerősítés nélkül.",
+        "step-3": "Élvezze a korlátlan hozzáférést az exkluzív felnőtt tartalomhoz a XVideos privát szekciójában!",
+        "cta-button": "Oldja fel a XVideos tartalmát most ingyen"
+    },
+    "id": {
+        "heading": "Dapatkan Akses Instan ke Konten XVideos!",
+        "video-alt": "Browser Anda tidak mendukung tag video.",
+        "image-heading": "JARINGAN SOSIAL 18+ BARU dengan XVideos",
+        "info-text": "Buka bagian XVideos dalam 3 langkah mudah:",
+        "step-1": "Jawab survei singkat untuk menyesuaikan pengalaman Anda.",
+        "step-2": "Daftar dengan cepat menggunakan Google atau tanpa konfirmasi email.",
+        "step-3": "Nikmati akses tanpa batas ke konten dewasa eksklusif di bagian pribadi XVideos!",
+        "cta-button": "Buka Konten XVideos Sekarang Gratis"
+    },
+    "it": {
+        "heading": "Accesso immediato ai contenuti di XVideos!",
+        "video-alt": "Il tuo browser non supporta il tag video.",
+        "image-heading": "NUOVO SOCIAL NETWORK 18+ con XVideos",
+        "info-text": "Sblocca la sezione XVideos in 3 semplici passaggi:",
+        "step-1": "Rispondi a un breve sondaggio per personalizzare la tua esperienza.",
+        "step-2": "Registrati velocemente con Google o senza conferma email.",
+        "step-3": "Goditi l'accesso illimitato ai contenuti esclusivi per adulti nella sezione privata di XVideos!",
+        "cta-button": "Sblocca i contenuti di XVideos ora gratuitamente"
+    },
+    "ja": {
+        "heading": "XVideosコンテンツに即アクセス！",
+        "video-alt": "あなたのブラウザーはビデオタグをサポートしていません。",
+        "image-heading": "XVideosとの新しい18+ソーシャルネットワーク",
+        "info-text": "3つの簡単なステップでXVideosセクションをアンロックします：",
+        "step-1": "あなたの体験をカスタマイズするために簡単な調査に回答します。",
+        "step-2": "Googleで迅速にサインインするか、メール確認なしでサインインします。",
+        "step-3": "XVideosのプライベートセクションで限定のアダルトコンテンツに無制限にアクセスします！",
+        "cta-button": "今すぐXVideosコンテンツを無料でアンロック"
+    },
+    "kk": {
+        "heading": "XVideos мазмұнына дереу қол жеткізіңіз!",
+        "video-alt": "Сіздің шолғышыңыз бейне тегін қолдамайды.",
+        "image-heading": "XVideos-мен жаңа 18+ әлеуметтік желі",
+        "info-text": "XVideos бөлігін 3 қарапайым қадамда ашыңыз:",
+        "step-1": "Тәжірибеңізді баптау үшін қысқа сауалнаманы толтырыңыз.",
+        "step-2": "Google арқылы жылдам тіркеліңіз немесе электрондық пошта растауынсыз тіркеліңіз.",
+        "step-3": "XVideos жеке бөліміндегі эксклюзивті ересек мазмұнға шексіз қол жеткізіңіз!",
+        "cta-button": "Қазір XVideos мазмұнын тегін ашыңыз"
+    }
+};
+</script>
 </body>
 </html>
