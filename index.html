@@ -49,6 +49,11 @@
             border: 3px solid #ff4500;
         }
 
+        .image-container.small img {
+            width: 50%; /* Размер в два раза меньше */
+            margin: 0 auto;
+        }
+
         .image-heading {
             font-size: 22px;
             font-weight: bold;
@@ -65,6 +70,7 @@
             -webkit-background-clip: text;
             color: transparent;
             margin-top: 5px;
+            margin-bottom: 20px;
         }
 
         .info-text {
@@ -118,6 +124,7 @@
     <div id="container">
         <div class="heading" data-translate="heading">Get Instant Access to XVideos Content!</div>
 
+        <!-- Видео перемещено сюда -->
         <div class="video-container">
             <video controls preload="metadata">
                 <source src="videos/Xvideo.mp4" type="video/mp4">
@@ -128,8 +135,12 @@
         <div class="image-heading" data-translate="image-heading">EXCLUSIVE 18+ ENTERTAINMENT PORTAL</div>
         <div class="sub-heading" data-translate="sub-heading">With a section of real private XVideos</div>
 
+        <!-- Изображения -->
+        <div class="image-container small">
+            <img src="ai_botfull.png" alt="Full AI Bot Image" data-translate="full-ai-bot-alt">
+        </div>
         <div class="image-container">
-            <img src="ai_bot.png" alt="Exclusive Preview">
+            <img src="ai_bot.png" alt="Exclusive Preview" data-translate="exclusive-preview-alt">
         </div>
 
         <div class="info-text" data-translate="info-text">Unlock the XVideos section in 3 easy steps:</div>
@@ -139,14 +150,16 @@
             <p><span class="number">3.</span> <span data-translate="step-3">Unlimited access to exclusive adult content in the private section of XVideos is open!</span></p>
         </div>
 
-        <a id="cta-button" href="https://www1.affhone.fyi/click?pid=3749&offer_id=291&l=1621955320" 
-           target="_blank" rel="noopener noreferrer" data-translate="cta-button">Unlock XVideos Content Now for Free</a>
+        <a id="cta-button" href="#" data-translate="cta-button">Get Free Access</a>
     </div>
 
-<script>
+
+    <script>
         const translations = {
             "en": {
                 "heading": "Get Instant Access to XVideos Content!",
+                "full-ai-bot-alt": "Full AI Bot Image",
+                "exclusive-preview-alt": "Exclusive Preview",
                 "video-alt": "Your browser does not support the video tag.",
                 "image-heading": "EXCLUSIVE 18+ ENTERTAINMENT PORTAL",
                 "sub-heading": "With a section of real private XVideos",
@@ -158,6 +171,8 @@
             },
             "es": {
                 "heading": "¡Obtén acceso instantáneo al contenido de XVideos!",
+                "full-ai-bot-alt": "Imagen completa del bot AI",
+                "exclusive-preview-alt": "Vista previa exclusiva",
                 "video-alt": "Tu navegador no soporta la etiqueta de video.",
                 "image-heading": "PORTAL DE ENTRETENIMIENTO EXCLUSIVO 18+",
                 "sub-heading": "Con una sección privada real de XVideos",
@@ -169,6 +184,8 @@
             },
             "ru": {
                 "heading": "Получите мгновенный доступ к контенту XVideos!",
+                "full-ai-bot-alt": "Изображение полного AI-бота",
+                "exclusive-preview-alt": "Эксклюзивный предварительный просмотр",
                 "video-alt": "Ваш браузер не поддерживает тег видео.",
                 "image-heading": "ЭКСКЛЮЗИВНЫЙ ПОРТАЛ РАЗВЛЕЧЕНИЙ 18+",
                 "sub-heading": "С реальным приватным разделом XVideos",
@@ -180,6 +197,8 @@
             },
             "fr": {
                 "heading": "Accédez instantanément au contenu de XVideos !",
+                "full-ai-bot-alt": "Image complète du bot AI",
+                "exclusive-preview-alt": "Aperçu exclusif",
                 "video-alt": "Votre navigateur ne prend pas en charge la balise vidéo.",
                 "image-heading": "PORTAIL DE DIVERTISSEMENT EXCLUSIF 18+",
                 "sub-heading": "Avec une section privée réelle de XVideos",
@@ -191,6 +210,8 @@
             },
             "de": {
                 "heading": "Erhalten Sie sofortigen Zugriff auf XVideos-Inhalte!",
+                "full-ai-bot-alt": "Vollständiges Bild des AI-Bots",
+                "exclusive-preview-alt": "Exklusive Vorschau",
                 "video-alt": "Ihr Browser unterstützt das Video-Tag nicht.",
                 "image-heading": "EXKLUSIVES 18+ UNTERHALTUNGSPORTAL",
                 "sub-heading": "Mit einem echten privaten Abschnitt von XVideos",
